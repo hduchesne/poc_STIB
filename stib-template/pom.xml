@@ -61,10 +61,13 @@
     <packaging>bundle</packaging>
     <description>This is the custom profile module (STIB PoC Templates) for running on a Digital Experience Manager server.</description>
 
-    <scm>
-        <connection>scm:dummy:uri</connection>
-        <developerConnection>scm:dummy:uri</developerConnection>
-    </scm>
+    <properties>
+        <jahia-depends>animate,bootstrap4-components,bootstrap4-core,default,font-awesome,jquery,popperjs</jahia-depends>
+    </properties>
+<!--    <scm>-->
+<!--        <connection>scm:dummy:uri</connection>-->
+<!--        <developerConnection>scm:dummy:uri</developerConnection>-->
+<!--    </scm>-->
 
     <repositories>
         <repository>
@@ -90,7 +93,7 @@
                 <configuration>
                     <instructions>
                         <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
-                        <Jahia-Depends>default</Jahia-Depends>
+                        <Jahia-Static-Resources>/css,/fonts,/javascript,/images</Jahia-Static-Resources>
                     </instructions>
                 </configuration>
             </plugin>
